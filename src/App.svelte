@@ -1,41 +1,56 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import Quotes from "./Quotes.svelte";
 
-	// Showif  the background image isn't cached...
-	var showQuote: boolean = true;
+	var imgLoaded: boolean = false;
 
-	onMount(() => {
-		setTimeout(() => { showQuote = false }, 1500);
-	});
+	const background : HTMLImageElement = new Image;
+	background.onload = () => {
+		imgLoaded = true;
+	}
+	background.src = "studio.jpg";
 </script>
 
 <style>
 	main {
 		position: relative;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
 		margin: 0;
-		padding: 1em;
+		padding: 0;
 	}
 
 	img {
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
 		position: absolute;
+		height: inherit;
+		width: inherit;
+		object-position: top;
 		object-fit: cover;
-		object-position: center;
+		opacity: 0.6;
+	}
+
+	#content {
+		padding: 20px;
+		position: absolute;
+		height: inherit;
+		width: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 </style>
 
 <main>
-	{#if showQuote}
-		<Quotes />
-	{:else}
-		<img in:fade src="studio.jpg" alt="Studio back" />
+	{#if imgLoaded}
+		<img in:fade src={background.src} alt="Levi Gunsallus Studio" />
 	{/if}
-	<h1>Levi Gunsallus</h1>
-	<a href="https://questanalytics.com" target="_blank"><h3>Quest Analytics</h3></a>
-	<a href="https://scarlok.com" target="_blank"><h3>Scarlok</h3></a>
+	<div id="content">
+		<div>
+			<h1>Levi Gunsallus</h1>
+			<a href="https://questanalytics.com" target="_blank"><h3>Quest Analytics</h3></a>
+			<a href="https://scarlok.com" target="_blank"><h3>Scarlok</h3></a>
+		</div>
+		<Quotes />
+	</div>
 </main>
