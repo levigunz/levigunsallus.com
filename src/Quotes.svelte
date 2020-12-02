@@ -75,6 +75,7 @@
 
 <style>
     #quote-wrapper {
+        width: 100%;
         align-self: center;
         display: flex;
         flex-direction: column;
