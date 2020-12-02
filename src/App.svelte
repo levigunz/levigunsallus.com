@@ -1,56 +1,79 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	import Quotes from "./Quotes.svelte";
-
-	var imgLoaded: boolean = false;
-
-	const background : HTMLImageElement = new Image;
-	background.onload = () => {
-		imgLoaded = true;
-	}
-	background.src = "studio.jpg";
 </script>
 
 <style>
 	main {
-		position: relative;
-		width: 100vw;
+		display: flex;
+		min-width: 100vw;
 		height: 100vh;
-		overflow: hidden;
 		margin: 0;
-		padding: 0;
+		padding: 20px;
 	}
 
-	img {
-		position: absolute;
-		height: inherit;
-		width: inherit;
-		object-position: top;
-		object-fit: cover;
-		opacity: 0.6;
+	#portrait-wrapper {
+		padding: 0px 5%;
+		flex-basis: 50%;
 	}
 
 	#content {
-		padding: 20px;
-		position: absolute;
-		height: inherit;
-		width: inherit;
+		width: 50%;
+		padding: 0px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-end;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: left;
+	}
+
+	h1 {
+		margin-top: 28px;
+		margin-bottom: 16px;
+	}
+
+	h3 {
+		margin-bottom: 4px;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		#portrait-wrapper {
+			padding: 0px;
+			padding-right: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 580px) {
+		main {
+			flex-direction: column;
+			height: unset;
+		}
+
+		#content {
+			width: unset;
+		}
+
+		#portrait-wrapper {
+			padding: 0px;
+			margin-top: 20px;
+			order: 2;
+		}
 	}
 </style>
 
 <main>
-	{#if imgLoaded}
-		<img in:fade src={background.src} alt="Levi Gunsallus Studio" />
-	{/if}
+	<div id="portrait-wrapper">
+		<img src="portrait.jpg" alt="Levi Gunsallus portrait by Liam Hogan" />
+	</div>
+	
 	<div id="content">
-		<div>
-			<h1>Levi Gunsallus</h1>
-			<a href="https://questanalytics.com" target="_blank"><h3>Quest Analytics</h3></a>
-			<a href="https://scarlok.com" target="_blank"><h3>Scarlok</h3></a>
-		</div>
+		<h1>Levi Gunsallus</h1>
+		<h3>Healthcare transparency at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
+		<h3>Reducing waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
 		<Quotes />
 	</div>
 </main>

@@ -3,59 +3,69 @@
 
     const quotes: Array<QuoteType> = [
         {
+            text: "A city built around wheels becomes inappropriate for feet.",
+            citation: 'Disabling Professions (Ideas in Progress) - Ivan Illich'
+        },
+        {
+            text: "Many other people are different, but I think that every step was sort of the inevitable, inexorable progress due to the previous steps in the other. It's not like I had no choice, but everything I did was the only choice because it was the only thing that made sense at the time.",
+            citation: "Founders at Work: Stories of Startups' Early Days - Jessica Livingston"
+        },
+        {
+            text: 'Normally I can avoid anything but tempation.',
+            citation: "Founders at Work: Stories of Startups' Early Days - Jessica Livingston"
+        },
+        {
             text: "Artists’ careers are reevaluated on a daily basis, but they don’t change that fast",
-            citation: "Boom",
+            citation: "Boom: Mad Money, Mega Dealers, and the Rise of Contemporary Art - Michael Shnayerson",
         },
         {
             text: "I’m optimistic that if you provide something people really like, and you make it easy for them to pay you for it, that you’ll do just fine",
-            citation: "The boy who could change the world",
+            citation: "The Boy Who Could Change the World: The Writings of Aaron Swartz - Aaron Swartz, Lawrence Lessig",
         },
         {
             text: "Being smart in school is about how well you solve problems that have correct answers and clear time limits",
-            citation: "The defining decade",
+            citation: "The Defining Decade: Why Your Twenties Matter--And How to Make the Most of Them Now - Meg Jay",
         },
         {
             text: "I have an opinion, but I don’t have a comment.",
-            citation: "Leo Castelli",
+            citation: "Leo and His Circle: The Life of Leo Castelli - Annie Cohen-Solal",
         },
         {
             text: "Anything that can make the medicine of complexity go down easier is a form of simplicity, even when it is an act of deceit.",
-            citation: "Laws of simplicity",
+            citation: "The Laws of Simplicity (Simplicity: Design, Technology, Business, Life) - John Maeda",
         },
         {
             text: "If you want to shoot an endangered species, there’s probably an app for that.",
-            citation: "An audience of one",
+            citation: "An Audience of One: Reclaiming Creativity for Its Own Sake - Srinivas Rao, Robin Dellabough, et al.",
         },
         {
             text: "Aren’t butterflies just wonderful, so bang a nail through them and stick them in a box",
-            citation: "The Unknown City"
+            citation: "The Unknown City: Contesting Architecture and Social Space - Iain Borden , Joe Kerr, et al."
         },
         {
             text: "Sometimes the best thing you can do is call it a loss and start over. Or order some pizza.",
-            citation: "Salt, Fat, Acid, Heat"
+            citation: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking - Samin Nosrat and Wendy MacNaughton"
         }, 
         {
             text: "Would you rather be smart and poor or dumb and rich?",
-            citation: "Bad Blood"
+            citation: "Bad Blood: Secrets and Lies in a Silicon Valley Startup - John Carreyrou"
         },
         {
             text: "I feel like immediate assassination but I can probably count on him to destroy his own possibilities",
-            citation: "Philip Johnson"
+            citation: "The Man in the Glass House: Philip Johnson, Architect of the Modern Century - Mark Lamster"
         },
         {
             text: "In an era of rapid change, style has a corrosive effect in design",
-            citation: "Jony Ive"
+            citation: "Jony Ive: The Genius Behind Apple's Greatest Products - Leander Kahney"
         },
         {
             text: "I think you impute a little more practical purpose to my thinking than actually exists. My mind wanders around, and I conceive of different things day and night.... it’s usually just that I like to solve a problem, and I work on these all the time",
-            citation: "The Idea Factory"
+            citation: "The Idea Factory: Bell Labs and the Great Age of American Innovation - Jon Gertner"
         },
         {
             text: "Yachtsman are consumed with the notion that their ships must be 100 percent sound",
-            citation: "Wanderer"
+            citation: "Wanderer - Sterling Hayden"
         },
-
-
     ];
 
     const selectedQuoteIndex: number = Math.floor(Math.random() * quotes.length);
@@ -66,16 +76,13 @@
 <style>
     #quote-wrapper {
         align-self: center;
-        margin-bottom: 60px;
         display: flex;
         flex-direction: column;
-    }
-
-    h2 {
-        max-width: 800px;
+        margin-top: 120px;
     }
 
     #quote-info {
+        margin-top: 12px;
         display: flex;
         justify-content: space-between;
     }
@@ -84,7 +91,7 @@
 <div id="quote-wrapper">
     <h2>"{quote.text}"</h2>
     <div id="quote-info">
-        <h4> - ({quote.citation})</h4>
+        <h4>({quote.citation})</h4>
         <h4>{selectedQuoteIndex+1}/{quotes.length}</h4>
     </div>
 </div>
