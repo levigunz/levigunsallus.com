@@ -12,6 +12,7 @@
 	}
 
 	#portrait-wrapper {
+		width: 100%;
 		padding: 0px 5%;
 		flex-basis: 50%;
 	}
