@@ -3,6 +3,38 @@
 
     const quotes: Array<QuoteType> = [
         {
+            text: "The best minds of my generation are thinking about how to make people click ads.",
+            citation: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future - Ashlee Vance"
+        },
+        {
+            text: "The configuration of the dining room is predicated on the size and shape of the dining table.",
+            citation: "The Interior Design Reference & Specification Book: Everything Interior Designers Need to Know Every Day - Chris Grimley, Linda O'Shea, and Mimi Love"
+        },
+        {
+            text: "Vexillology is the study of flags, and like most fields where the stakes are quite low, opinions can be very intense.",
+            citation: "The 99% Invisible City: A Field Guide to the Hidden World of Everyday Design - Kurt Kohlstedt, Roman Mars"
+        },
+        {
+            text: "Innovation is not an individual phenomenon, but a collective, incremental and messy network phenomenon.",
+            citation: "How Innovation Works: And Why It Flourishes in Freedom - Matt Ridley"
+        },
+        {
+            text: "Nothing inspires arrogance like a lifetime spent controlling machines that are incapable of criticism.",
+            citation: "Permanent Record - Edward Snowden"
+        },
+        {
+            text: "I want people to read [my book]. I hope they like it. And, at the same time, I don’t want to know what they think about it.",
+            citation: "Working in Public: The Making and Maintenance of Open Source Software - Nadia Eghbal"
+        },
+        {
+            text: "Don’t criticize them; they are just what we would be under similar circumstances.",
+            citation: "How to Win Friends and Influence People - Dale Carnegie"
+        },
+        {
+            text: "In purporting to know us better than we know ourselves, user-friendly products trap us in assumptions we can never break. We become rats in a Skinner box with only one lever to push, and so we push and push, because there is nothing else to do.",
+            citation: "User Friendly - Cliff Kuang, Robert Fabricant"
+        },
+        {
             text: "A city built around wheels becomes inappropriate for feet.",
             citation: 'Disabling Professions (Ideas in Progress) - Ivan Illich'
         },
