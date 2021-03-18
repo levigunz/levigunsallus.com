@@ -28,7 +28,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: left;
+		object-position: center;
 	}
 
 	h1 {
@@ -67,7 +67,7 @@
 
 <main>
 	<div id="portrait-wrapper">
-		<img src="portrait.jpg" alt="Levi Gunsallus portrait by Liam Hogan" />
+		<img src="portrait2021.jpg" alt="Levi Gunsallus (2021 - Self Portrait)" />
 	</div>
 	
 	<div id="content">
