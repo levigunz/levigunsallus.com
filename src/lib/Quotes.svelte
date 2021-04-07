@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { QuoteType } from './types/quote.type';
+    import type { QuoteType } from '../types/quote.type';
 
     const quotes: Array<QuoteType> = [
         {
