@@ -72,9 +72,9 @@
 	
 	<div id="content">
 		<h1>Levi Gunsallus</h1>
-		<h3>Healthcare accuracy at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
-		<h3>Reducing waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
-		<h3>Streamlining housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a>.</h3>
+		<h3>Healthcare at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
+		<h3>Housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a>.</h3>
+		<h3>Waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
 		<Quotes />
 	</div>
 </main>
