@@ -3,6 +3,14 @@
 
     const quotes: Array<QuoteType> = [
         {
+            text: "Do you want a lousy tip or a beautiful picture of my son?",
+            citation: "His Way: The Unauthorized Biography of Frank Sinatra - Kitty Kelley"
+        },
+        {
+            text: "If you want to create a car that gets 10 percent better mileage, you just have to tweak the current design, but if you want to get one that gets five hundred miles per gallon, you need to start over.",
+            citation: "How Google Works - Eric Schmidt, Jonathan Rosenberg"
+        },
+        {
             text: "The best minds of my generation are thinking about how to make people click ads.",
             citation: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future - Ashlee Vance"
         },
