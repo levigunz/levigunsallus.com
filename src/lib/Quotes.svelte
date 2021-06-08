@@ -3,6 +3,14 @@
 
     const quotes: Array<QuoteType> = [
         {
+            text: "Every city would have at least one computer, and the very biggest cities might have several.",
+            citation: "The Dream Machine - M. Mitchell Waldrop"
+        },
+        {
+            text: "When you have skin in the game, dull things like checking the safety of the aircraft because you may be forced to be a passenger in it cease to be boring.",
+            citation: "Skin in the Game - Nassim Nicholas Taleb"
+        },
+        {
             text: "Do you want a lousy tip or a beautiful picture of my son?",
             citation: "His Way: The Unauthorized Biography of Frank Sinatra - Kitty Kelley"
         },
