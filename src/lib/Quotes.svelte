@@ -3,6 +3,10 @@
 
     const quotes: Array<QuoteType> = [
         {
+            text: "The mind was brilliant, but even a brilliant mind is only as good as the material——the input——fed into it.",
+            citation: "The Power Broker - Robert Caro"
+        },
+        {
             text: "Every city would have at least one computer, and the very biggest cities might have several.",
             citation: "The Dream Machine - M. Mitchell Waldrop"
         },
