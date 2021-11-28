@@ -17,16 +17,16 @@
 
 <style>
     #quote-wrapper {
-        /* width: 100%; */
-        /* align-self: center; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* margin-top: 120px; */
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
     }
     #quote-info {
-        /* margin-top: 12px; */
-        /* display: flex; */
-        /* justify-content: space-between; */
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
     }
 </style>
 
