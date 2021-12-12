@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "The way discounting works, if we discount the future by 5 percent, a person’s death today is worth about thirty-nine billion deaths five hundred years from now.",
+        citation: "Stubborn Attachments - Tyler Cowen"
+    },
+    {
         text: "The mind was brilliant, but even a brilliant mind is only as good as the material——the input——fed into it.",
         citation: "The Power Broker - Robert Caro"
     },
