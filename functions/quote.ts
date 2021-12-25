@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "We chose a whimsical name, which we will regret to our dying day—Kentucky Fried Computers.",
+        citation: "The Big Score - Michael S. Malone"
+    },
+    {
         text: "The way discounting works, if we discount the future by 5 percent, a person’s death today is worth about thirty-nine billion deaths five hundred years from now.",
         citation: "Stubborn Attachments - Tyler Cowen"
     },
