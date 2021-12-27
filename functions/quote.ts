@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "Details, when they are successful, are not mere decoration. They do not distract or entertain. They lead to an understanding of the whole of which they are an inherent part.",
+        citation: "Thinking Architecture - Peter Zumthor"
+    },
+    {
         text: "We chose a whimsical name, which we will regret to our dying day—Kentucky Fried Computers.",
         citation: "The Big Score - Michael S. Malone"
     },
