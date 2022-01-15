@@ -1,6 +1,27 @@
 <script lang="ts">
 	import Quotes from "../components/quotes.svelte";
-</script><style>
+
+	const portraits = [
+		{ src: 'portrait2021', alt: 'Levi Gunsallus (2021 - Self Portrait)' },
+		{ src: 'portrait2020', alt: 'Levi Gunsallus (2020 - Liam Hogan)' },
+		{ src: 'portrait2019', alt: 'Levi Gunsallus (2019 - Liam Hogan)' }
+	];
+
+	let currentPortrait = 0;
+
+	const decreaseCurrentPortrait = () => {
+		currentPortrait--
+	}
+
+	const increaseCurrentPortrait = () => {
+		currentPortrait++
+	}
+
+	$: allowLeftArrow = currentPortrait !== 0;
+	$: allowRightArrow = currentPortrait !== portraits.length - 1;
+</script>
+
+<style>
 	main {
 		display: flex;
 		min-width: 100vw;
@@ -10,18 +31,25 @@
 	}
 	#portrait-wrapper {
 		padding: 0px 5%;
-		flex-basis: 50%;
+		flex-basis: 60%;
+		/* height: 100vh; */
+		/* overflow: hidden; */
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
 	#content {
-		width: 50%;
+		width: 40%;
 		padding: 0px;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: space-between;
+	}
+	picture {
+		width: 100%;
 	}
 	img {
 		width: 100%;
-		height: 100%;
 		object-fit: cover;
 		object-position: center;
 	}
@@ -32,13 +60,49 @@
 	h3 {
 		margin-bottom: 4px;
 	}
+	.under-image {
+		display: flex;
+		margin-top: 8px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.arrow {
+		margin-left: 16px;
+		cursor: pointer;
+	}
+
+	.arrow > svg > path {
+		fill: slategray;
+	}
+
+	.arrow:hover > svg > path {
+		fill: black;
+	}
+
+	.arrow-disabled {
+		cursor: not-allowed;
+		color: lightgrey;
+	}
+
+	.arrow-disabled:hover {
+		color: lightgrey;
+	}
+
+	.arrow-disabled > svg > path {
+		fill: lightgrey;
+	}
+
+	.arrow-disabled:hover > svg > path {
+		fill: lightgrey;
+	}
+
 	@media only screen and (max-width: 1200px) {
 		#portrait-wrapper {
 			padding: 0px;
 			padding-right: 20px;
 		}
 	}
-	@media only screen and (max-width: 580px) {
+	@media only screen and (max-width: 800px) {
 		main {
 			flex-direction: column;
 			height: unset;
@@ -56,14 +120,36 @@
 
 <main>
 	<div id="portrait-wrapper">
-		<img src="portrait2021.jpg" alt="Levi Gunsallus (2021 - Self Portrait)" />
+		<picture>
+			<source srcset="{portraits[currentPortrait].src}.webp" type="image/webp">
+			<!-- <source srcset="{portraits[currentPortrait].src}.jpg"> -->
+			<img loading="lazy" src="{portraits[currentPortrait].src}.jpg" alt="{portraits[currentPortrait].alt}">
+		</picture>
+		<!-- This one should be much smaller -->
+		<div class="under-image">
+			<p>{portraits[currentPortrait].alt}</p>
+
+			<div style="display: flex;">
+				<!-- Left arrow -->
+				<div on:click={allowLeftArrow ? decreaseCurrentPortrait : undefined} class="{allowLeftArrow ? 'arrow' : 'arrow arrow-disabled'}">
+					<svg width="24" height="24" style="color: inherit" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/></svg>
+				</div>
+				<!-- Right arrow -->
+				<div on:click={allowRightArrow ? increaseCurrentPortrait : undefined} class="{allowRightArrow ? 'arrow' : 'arrow arrow-disabled'}">
+					<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<div id="content">
-		<h1>Levi Gunsallus</h1>
-		<h3>Healthcare at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
-		<h3>Housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a>.</h3>
-		<h3>Waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
+		<div>
+			<h1>Levi Gunsallus</h1>
+			<h3>Healthcare at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
+			<h3>Housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a>.</h3>
+			<h3>Waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
+		</div>
+		
 		<Quotes />
 	</div>
 </main>

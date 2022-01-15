@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "The comfort of having an organization is largely illusionary. It still comes down to one programmer in the end.",
+        citation: "The Making of Prince of Persia - Jordan Mechner"
+    },
+    {
         text: "Details, when they are successful, are not mere decoration. They do not distract or entertain. They lead to an understanding of the whole of which they are an inherent part.",
         citation: "Thinking Architecture - Peter Zumthor"
     },
