@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "Ours is a life of challenge and frustration, all of which is a fulfilling pastime.",
+        citation: "Invention: A Life - James Dyson"
+    },
+    {
         text: "The comfort of having an organization is largely illusionary. It still comes down to one programmer in the end.",
         citation: "The Making of Prince of Persia - Jordan Mechner"
     },
