@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "It turns out that, given the way the human mind is constructed, one of the best ways to convince someone you believe something is simply to believe it.",
+        citation: "Where Is My Flying Car? - J. Storrs Hall"
+    },
+    {
         text: "Ours is a life of challenge and frustration, all of which is a fulfilling pastime.",
         citation: "Invention: A Life - James Dyson"
     },
