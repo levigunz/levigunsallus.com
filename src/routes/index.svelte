@@ -23,38 +23,33 @@
 
 <style>
 	main {
-		display: flex;
-		min-width: 100vw;
+		display: grid;
+		grid-template-columns: minmax(200px, 700px) auto;
+		grid-template-rows: auto auto;
 		height: 100vh;
-		margin: 0;
-		padding: 20px;
 	}
 	#portrait-wrapper {
-		padding: 0px 5%;
-		flex-basis: 60%;
-		/* height: 100vh; */
-		/* overflow: hidden; */
+		grid-row-start: span 2;
+		padding: 40px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 	}
 	#content {
-		width: 40%;
-		padding: 0px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		padding: 40px;
+		height: auto;
 	}
 	picture {
 		width: 100%;
+		/* height: 100%; */
+		/* aspect-ratio: 3/4; */
 	}
 	img {
 		width: 100%;
-		object-fit: cover;
-		object-position: center;
+		height: 100%;
+		/* aspect-ratio: 3/4; */
 	}
 	h1 {
-		margin-top: 28px;
 		margin-bottom: 16px;
 	}
 	h3 {
@@ -96,24 +91,27 @@
 		fill: lightgrey;
 	}
 
-	@media only screen and (max-width: 1200px) {
-		#portrait-wrapper {
-			padding: 0px;
-			padding-right: 20px;
-		}
-	}
 	@media only screen and (max-width: 800px) {
 		main {
-			flex-direction: column;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto auto;
 			height: unset;
 		}
 		#content {
-			width: unset;
+			order: 1;
+			padding: 20px;
 		}
 		#portrait-wrapper {
-			padding: 0px;
-			margin-top: 20px;
 			order: 2;
+			padding: 20px;
+		}
+		picture {
+			width: 100%;
+			height: auto;
+		}
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 </style>
@@ -143,14 +141,11 @@
 	</div>
 	
 	<div id="content">
-		<div>
-			<h1>Levi Gunsallus</h1>
-			<h3>Healthcare at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a>.</h3>
-			<h3>Housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a>.</h3>
-			<h3>Waste at <a href="https://scarlok.com" target="_blank">Scarlok</a>.</h3>
-		</div>
-		
-		<Quotes />
+		<h1>Levi Gunsallus</h1>
+		<h3>Healthcare at <a href="https://questanalytics.com" target="_blank">Quest Analytics</a></h3>
+		<h3>Housing at <a href="https://ovalhands.com" target="_blank">Ovalhands</a></h3>
+		<h3>Waste at <a href="https://scarlok.com" target="_blank">Scarlok</a></h3>
 	</div>
+	<Quotes />
 </main>
 

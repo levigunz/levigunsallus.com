@@ -91,15 +91,15 @@ const quotes: Array<QuoteType> = [
         citation: "Founders at Work: Stories of Startups' Early Days - Jessica Livingston"
     },
     {
-        text: "Artists’ careers are reevaluated on a daily basis, but they don’t change that fast",
+        text: "Artists’ careers are reevaluated on a daily basis, but they don’t change that fast.",
         citation: "Boom: Mad Money, Mega Dealers, and the Rise of Contemporary Art - Michael Shnayerson",
     },
     {
-        text: "I’m optimistic that if you provide something people really like, and you make it easy for them to pay you for it, that you’ll do just fine",
+        text: "I’m optimistic that if you provide something people really like, and you make it easy for them to pay you for it, that you’ll do just fine.",
         citation: "The Boy Who Could Change the World: The Writings of Aaron Swartz - Aaron Swartz, Lawrence Lessig",
     },
     {
-        text: "Being smart in school is about how well you solve problems that have correct answers and clear time limits",
+        text: "Being smart in school is about how well you solve problems that have correct answers and clear time limits.",
         citation: "The Defining Decade: Why Your Twenties Matter--And How to Make the Most of Them Now - Meg Jay",
     },
     {
@@ -115,7 +115,7 @@ const quotes: Array<QuoteType> = [
         citation: "An Audience of One: Reclaiming Creativity for Its Own Sake - Srinivas Rao, Robin Dellabough, et al.",
     },
     {
-        text: "Aren’t butterflies just wonderful, so bang a nail through them and stick them in a box",
+        text: "Aren’t butterflies just wonderful, so bang a nail through them and stick them in a box.",
         citation: "The Unknown City: Contesting Architecture and Social Space - Iain Borden , Joe Kerr, et al."
     },
     {
@@ -127,19 +127,19 @@ const quotes: Array<QuoteType> = [
         citation: "Bad Blood: Secrets and Lies in a Silicon Valley Startup - John Carreyrou"
     },
     {
-        text: "I feel like immediate assassination but I can probably count on him to destroy his own possibilities",
+        text: "I feel like immediate assassination but I can probably count on him to destroy his own possibilities.",
         citation: "The Man in the Glass House: Philip Johnson, Architect of the Modern Century - Mark Lamster"
     },
     {
-        text: "In an era of rapid change, style has a corrosive effect in design",
+        text: "In an era of rapid change, style has a corrosive effect in design.",
         citation: "Jony Ive: The Genius Behind Apple's Greatest Products - Leander Kahney"
     },
     {
-        text: "I think you impute a little more practical purpose to my thinking than actually exists. My mind wanders around, and I conceive of different things day and night.... it’s usually just that I like to solve a problem, and I work on these all the time",
+        text: "I think you impute a little more practical purpose to my thinking than actually exists. My mind wanders around, and I conceive of different things day and night.... it’s usually just that I like to solve a problem, and I work on these all the time.",
         citation: "The Idea Factory: Bell Labs and the Great Age of American Innovation - Jon Gertner"
     },
     {
-        text: "Yachtsman are consumed with the notion that their ships must be 100 percent sound",
+        text: "Yachtsman are consumed with the notion that their ships must be 100 percent sound.",
         citation: "Wanderer - Sterling Hayden"
     },
 ];

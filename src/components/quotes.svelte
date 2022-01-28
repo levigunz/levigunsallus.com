@@ -22,11 +22,12 @@
 
 <style>
     #quote-wrapper {
+        order: 3;
         width: 100%;
-        align-self: center;
+        align-self: flex-end;
+        padding: 40px;
         display: flex;
         flex-direction: column;
-        margin-top: 120px;
     }
     #quote-text {
         margin-top: 12px;
@@ -47,6 +48,11 @@
     .refresh:hover > svg > path {
         cursor: pointer;
         fill: black;
+    }
+    @media only screen and (max-width: 800px) {
+        #quote-wrapper {
+            padding: 20px;
+        }
     }
 </style>
 
