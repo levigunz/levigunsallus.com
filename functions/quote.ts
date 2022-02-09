@@ -3,6 +3,14 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "As the amount of information available to the public increased, the authoritativeness of any one source decreased.",
+        citation: "The Revolt of the Public - Martin Gurri"
+    },
+    {
+        text: "Great people can tolerate ambiguity; they can both believe and disbelieve at the same time.",
+        citation: "The Art of Doing Science and Engineering - Richard W. Hamming"
+    },
+    {
         text: "It turns out that, given the way the human mind is constructed, one of the best ways to convince someone you believe something is simply to believe it.",
         citation: "Where Is My Flying Car? - J. Storrs Hall"
     },
