@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "There is charm in every detail my eye lands on. It's the delicate charm of age, which cannot be manufactured, but has to organically grow and survive over time.",
+        citation: "Two Years On A Bike - Martijn Doolaard"
+    },
+    {
         text: "As the amount of information available to the public increased, the authoritativeness of any one source decreased.",
         citation: "The Revolt of the Public - Martin Gurri"
     },
