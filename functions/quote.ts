@@ -3,6 +3,14 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "People always say that the CEO's job is not to run out of money, and what they usually mean by that is fundraising. But the other way you can do that is to make money.",
+        citation: "High Growth Handbook - Elad Gil"
+    },
+    {
+        text: "Goals selected by consensus rarely surprise.",
+        citation: "Scientific Freedom - Donald W. Braben"
+    },
+    {
         text: "There is charm in every detail my eye lands on. It's the delicate charm of age, which cannot be manufactured, but has to organically grow and survive over time.",
         citation: "Two Years On A Bike - Martijn Doolaard"
     },
