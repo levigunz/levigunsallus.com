@@ -3,6 +3,14 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "At Digg, I became a Director of Engineering because the company and my team kept shrinking. Far from a recognition of my success, this was a party favor for participating in one of history's great showcases of snatching defeat from the jaws of victory.",
+        citation: "An Elegant Puzzle - Will Larson"
+    },
+    {
+        text: "A community is a living organism. It's either declining or improving; there's no steady-state in a community.",
+        citation: "Get Together - Bailey Richardson, Kevin Huynh, and Kai Elmer Sotto"
+    },
+    {
         text: "People always say that the CEO's job is not to run out of money, and what they usually mean by that is fundraising. But the other way you can do that is to make money.",
         citation: "High Growth Handbook - Elad Gil"
     },
@@ -43,7 +51,7 @@ const quotes: Array<QuoteType> = [
         citation: "The Big Score - Michael S. Malone"
     },
     {
-        text: "The way discounting works, if we discount the future by 5 percent, a person’s death today is worth about thirty-nine billion deaths five hundred years from now.",
+        text: "The way discounting works, if we discount the future by 5 percent, a person's death today is worth about thirty-nine billion deaths five hundred years from now.",
         citation: "Stubborn Attachments - Tyler Cowen"
     },
     {
@@ -87,11 +95,11 @@ const quotes: Array<QuoteType> = [
         citation: "Permanent Record - Edward Snowden"
     },
     {
-        text: "I want people to read [my book]. I hope they like it. And, at the same time, I don’t want to know what they think about it.",
+        text: "I want people to read [my book]. I hope they like it. And, at the same time, I don't want to know what they think about it.",
         citation: "Working in Public: The Making and Maintenance of Open Source Software - Nadia Eghbal"
     },
     {
-        text: "Don’t criticize them; they are just what we would be under similar circumstances.",
+        text: "Don't criticize them; they are just what we would be under similar circumstances.",
         citation: "How to Win Friends and Influence People - Dale Carnegie"
     },
     {
@@ -111,11 +119,11 @@ const quotes: Array<QuoteType> = [
         citation: "Founders at Work: Stories of Startups' Early Days - Jessica Livingston"
     },
     {
-        text: "Artists’ careers are reevaluated on a daily basis, but they don’t change that fast.",
+        text: "Artists' careers are reevaluated on a daily basis, but they don't change that fast.",
         citation: "Boom: Mad Money, Mega Dealers, and the Rise of Contemporary Art - Michael Shnayerson",
     },
     {
-        text: "I’m optimistic that if you provide something people really like, and you make it easy for them to pay you for it, that you’ll do just fine.",
+        text: "I'm optimistic that if you provide something people really like, and you make it easy for them to pay you for it, that you'll do just fine.",
         citation: "The Boy Who Could Change the World: The Writings of Aaron Swartz - Aaron Swartz, Lawrence Lessig",
     },
     {
@@ -123,7 +131,7 @@ const quotes: Array<QuoteType> = [
         citation: "The Defining Decade: Why Your Twenties Matter--And How to Make the Most of Them Now - Meg Jay",
     },
     {
-        text: "I have an opinion, but I don’t have a comment.",
+        text: "I have an opinion, but I don't have a comment.",
         citation: "Leo and His Circle: The Life of Leo Castelli - Annie Cohen-Solal",
     },
     {
@@ -131,11 +139,11 @@ const quotes: Array<QuoteType> = [
         citation: "The Laws of Simplicity (Simplicity: Design, Technology, Business, Life) - John Maeda",
     },
     {
-        text: "If you want to shoot an endangered species, there’s probably an app for that.",
+        text: "If you want to shoot an endangered species, there's probably an app for that.",
         citation: "An Audience of One: Reclaiming Creativity for Its Own Sake - Srinivas Rao, Robin Dellabough, et al.",
     },
     {
-        text: "Aren’t butterflies just wonderful, so bang a nail through them and stick them in a box.",
+        text: "Aren't butterflies just wonderful, so bang a nail through them and stick them in a box.",
         citation: "The Unknown City: Contesting Architecture and Social Space - Iain Borden , Joe Kerr, et al."
     },
     {
@@ -155,7 +163,7 @@ const quotes: Array<QuoteType> = [
         citation: "Jony Ive: The Genius Behind Apple's Greatest Products - Leander Kahney"
     },
     {
-        text: "I think you impute a little more practical purpose to my thinking than actually exists. My mind wanders around, and I conceive of different things day and night.... it’s usually just that I like to solve a problem, and I work on these all the time.",
+        text: "I think you impute a little more practical purpose to my thinking than actually exists. My mind wanders around, and I conceive of different things day and night.... it's usually just that I like to solve a problem, and I work on these all the time.",
         citation: "The Idea Factory: Bell Labs and the Great Age of American Innovation - Jon Gertner"
     },
     {
