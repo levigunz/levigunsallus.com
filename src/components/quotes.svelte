@@ -25,7 +25,6 @@
         order: 3;
         width: 100%;
         align-self: flex-end;
-        padding: 40px;
         display: flex;
         flex-direction: column;
     }
@@ -41,18 +40,16 @@
     }
     .refresh {
         margin-left: 12px;
+        user-select: none;
+    }
+    .refresh:hover {
+        cursor: pointer;
     }
     .refresh > svg > path {
         fill: slategrey;
     }
     .refresh:hover > svg > path {
-        cursor: pointer;
         fill: black;
-    }
-    @media only screen and (max-width: 800px) {
-        #quote-wrapper {
-            padding: 20px;
-        }
     }
 </style>
 
