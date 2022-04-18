@@ -24,6 +24,14 @@
 
 <style>
 
+	main {
+		min-height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	h1 {
 		margin-bottom: 16px;
 	}
@@ -64,6 +72,8 @@
 
 	#outergrid {
 		height: 100vh;
+		max-height: 1000px;
+		max-width: 1600px;
 		width: 100%;
 		display: grid;
   		grid-template-columns: auto 1fr;
@@ -122,7 +132,7 @@
 		width: auto;
 	}
 
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 1000px) {
 		#outergrid {
 			display: flex;
 			flex-direction: column;
