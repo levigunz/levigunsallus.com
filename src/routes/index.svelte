@@ -93,20 +93,16 @@
 	}
 
 	#portrait {
-		/* background: lightblue; */
 		grid-column: 1;
   		grid-row: 1 / 3;
 	}
 
 	#bio {
-		/* background-color: lightyellow; */
 		grid-column: 2;
   		grid-row: 1;
 	}
 
 	#quotes {
-		/* background: lightpink; */
-
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -114,7 +110,6 @@
 	#caption {
 		grid-column: 1;
   		grid-row: 3;
-		/* background: lightgreen; */
 
 		display: flex;
 		justify-content: space-between;
@@ -133,7 +128,14 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
+		main {
+			height: unset;
+			display: unset;
+		}
 		#outergrid {
+			height: unset;
+			max-height: unset;
+			max-width: unset;
 			display: flex;
 			flex-direction: column;
 		}
