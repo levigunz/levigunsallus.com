@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "I've decided that I'll never retire from active business, but that I'll not be a slave to my desk.", 
+        citation: "Oil Man - Michael Wallis"
+    },
+    {
         text: "At Digg, I became a Director of Engineering because the company and my team kept shrinking. Far from a recognition of my success, this was a party favor for participating in one of history's great showcases of snatching defeat from the jaws of victory.",
         citation: "An Elegant Puzzle - Will Larson"
     },
