@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "No system of government, no economoic system, no currency, and no empire lasts forever, yet almost everyone is surprised and ruined when they fail.",
+        citation: "Principles for Dealing with the Changing World Order: Why Nations Succeed and Fail - Ray Dalio"
+    },
+    {
         text: "I've decided that I'll never retire from active business, but that I'll not be a slave to my desk.", 
         citation: "Oil Man - Michael Wallis"
     },
