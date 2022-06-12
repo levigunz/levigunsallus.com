@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "Do an apparently simple experiment that gives you an important bit of information....Ask the important question at the right time. Ask later and it's obvious.",
+        citation: "Apprentice to Genius: The Making of a Scientific Dynasty - Robert Kanigel"
+    },
+    {
         text: "No system of government, no economic system, no currency, and no empire lasts forever, yet almost everyone is surprised and ruined when they fail.",
         citation: "Principles for Dealing with the Changing World Order: Why Nations Succeed and Fail - Ray Dalio"
     },
