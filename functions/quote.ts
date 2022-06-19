@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "The next time I buy a house, by God, it's going to have walls!",
+        citation: "A-frame - Chad Randl"
+    },
+    {
         text: "Do an apparently simple experiment that gives you an important bit of information....Ask the important question at the right time. Ask later and it's obvious.",
         citation: "Apprentice to Genius: The Making of a Scientific Dynasty - Robert Kanigel"
     },
