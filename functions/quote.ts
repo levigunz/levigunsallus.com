@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "There is a vast difference between understanding a problem in terms of equations and diagrams and understanding it in terms of copper and iron.",
+        citation: "Pieces of the Action - Vannevar Bush"
+    },
+    {
         text: "The next time I buy a house, by God, it's going to have walls!",
         citation: "A-frame - Chad Randl"
     },
