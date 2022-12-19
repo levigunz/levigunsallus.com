@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "The wisdom from books can't be put in an askur.",
+        citation: "How Iceland Changed the World: The Big History of a Small Island - Egill Bjarnason"
+    },
+    {
         text: "There is a vast difference between understanding a problem in terms of equations and diagrams and understanding it in terms of copper and iron.",
         citation: "Pieces of the Action - Vannevar Bush"
     },
