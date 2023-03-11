@@ -3,6 +3,14 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "The only way to know for sure what human beings will do, in general, is to stand back and watch them live their lives.",
+        citation: "A Biography of the Pixel - Alvy Ray Smith"
+    },
+    {
+        text: "There are a thousand and one design decisions within the envelope of a house, and in one as tightly planned as this, there's a knock-on effect whenever you move one element.",
+        citation: "Architects' Houses - Michael Webb"
+    },
+    {
         text: "The wisdom from books can't be put in an askur.",
         citation: "How Iceland Changed the World: The Big History of a Small Island - Egill Bjarnason"
     },
