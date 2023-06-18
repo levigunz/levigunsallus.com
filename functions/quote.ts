@@ -3,6 +3,18 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "In order to feel cold, you have to feel hot; in order to feel safe, you have to feel at risk. Contrast is the true measure of a complete experience.",
+        citation: "Houses 2 - Tom Kundig"
+    },
+    {
+        text: "The details are not the details; the details make the product.",
+        citation: "Eames: Beautiful Details - Eames Demetrios"
+    },
+    {
+        text: "If your teams believe you're optimizing for an individual rather than for the team, you'll lose their trust. And if your structure doesn't match your overall strategy, the person you've just put in charge will be set up for failure.",
+        citation: "Scaling People - Claire Hughes Johnson"
+    },
+    {
         text: "The only way to know for sure what human beings will do, in general, is to stand back and watch them live their lives.",
         citation: "A Biography of the Pixel - Alvy Ray Smith"
     },
