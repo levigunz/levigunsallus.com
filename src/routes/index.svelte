@@ -2,6 +2,7 @@
 	import Quotes from "../components/quotes.svelte";
 
 	const portraits = [
+		{ src: 'portrait2023', alt: 'Levi Gunsallus (2023 - Self Portrait)' },
 		{ src: 'portrait2022', alt: 'Levi Gunsallus (2022 - Self Portrait)' },
 		{ src: 'portrait2021', alt: 'Levi Gunsallus (2021 - Self Portrait)' },
 		{ src: 'portrait2020', alt: 'Levi Gunsallus (2020 - Liam Hogan)' },
