@@ -3,6 +3,10 @@ import type { QuoteType } from '../src/types/quote.type';
 
 const quotes: Array<QuoteType> = [
     {
+        text: "In the old days, when a student had nerve enough and thought he had enough credits for graduation, he used to get a club in one hand and a gun in the other, and go around and hold up the faculty.",
+        citation: "Forged In Gold: Missouri S&T's first 150 Years - Larry Gragg"
+    },
+    {
         text: "In order to feel cold, you have to feel hot; in order to feel safe, you have to feel at risk. Contrast is the true measure of a complete experience.",
         citation: "Houses 2 - Tom Kundig"
     },
