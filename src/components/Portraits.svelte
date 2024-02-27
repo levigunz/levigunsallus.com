@@ -81,7 +81,6 @@
 				<button on:click={() => selectPortraitByYear(portrait.year)}>
 					<img src={portrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
 				</button>
-				<!-- <img role="button" tabindex="0" src={portrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} on:click={() => selectPortraitByYear(portrait.year)} /> -->
 				{/each}
 			</div>
 		</div>

@@ -30,7 +30,8 @@
 	}
 
     #inner-nav {
-        max-width: 80em;
+        max-width: 1248px;
+        padding: 18px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -64,13 +65,9 @@
         margin-top: 0;
     }
 
-    @media only screen and (max-width: 80em) {
+    @media only screen and (max-width: 1248px) {
         nav {
             padding: 0rem;
         }
-
-		#inner-nav {
-			padding: 18px;
-		}
 	}
 </style>

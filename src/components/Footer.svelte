@@ -1,30 +1,32 @@
 <footer>
-    <div style="width: 100%; border-bottom: 1px solid #424242;">
-        <div class="footer-grid">
-            <div id="about-me">
-                <h3>About Me</h3>
-                <p>In 2013, I wrote the 147th ranked action/adventure game for iOS.</p>
-                <p> In 2019, I was an intern for 3 weeks.</p>
-                <p>Now I just change this website once a year.</p>
-            </div>
-            <div id="follow-me">
-                <h3>Follow Me</h3>
+    <div class="footer-grid">
+        <div id="about-me">
+            <h3>About Me</h3>
+            <p>In 2013, I wrote the 147th ranked action/adventure game for iOS.</p>
+            <p> In 2019, I was an intern for 3 weeks.</p>
+            <p>Now I just change this website once a year.</p>
+        </div>
+        <div id="follow-me">
+            <h3>Follow Me</h3>
+            <!-- <div id="follow-me-links"> -->
                 <p><a href="//github.com/levigunz" target="_blank">GitHub</a></p>
                 <p><a href="//instagram.com/levigunz" target="_blank">Instagram</a></p>
                 <p><a href="//x.com/levigunz" target="_blank">X</a></p>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 
+    <div class="divider" style="width: 100%; border-bottom: 1px solid #424242;" />
+
     <div class="footer-grid">
         <div id="policies">
-            <p><a href="/terms-conditions" class="dark-bg">Terms & Conditions</a></p>
-            <p><a href="/privacy-policy" class="dark-bg">Privacy Policy</a></p>
-            <p><a href="/privacy-policy#cookies" class="dark-bg">Use of Cookies</a></p>
-            <p><a href="/site-index" class="dark-bg">Site Index</a></p>
+            <p><a href="/terms-conditions">Terms & Conditions</a></p>
+            <p><a href="/privacy-policy">Privacy Policy</a></p>
+            <p><a href="/privacy-policy#cookies">Use of Cookies</a></p>
+            <p><a href="/site-index">Site Index</a></p>
         </div>
         <div id="copyright">
-            <p class="dark-bg">© 2024 Levi Gunsallus</p>
+            <p>© 2024 Levi Gunsallus</p>
         </div>
     </div>
     
@@ -43,11 +45,11 @@
 
 	.footer-grid {
 		display: grid;
-		width: 100%;
         margin: auto;
 		grid-template-columns: repeat(12, 1fr);
-        max-width: 80em;
-        padding: 48px 0px;
+        max-width: 1248px;
+        width: 100%;
+        padding: 48px 18px;
         gap: 18px;
 	}
 
@@ -85,13 +87,27 @@
 
     @media only screen and (max-width: 668px) {
         .footer-grid {
-            /* padding: 48px 18px; */
-            row-gap: 64px;
+            padding: 48px 18px;
+            row-gap: 24px;
         }
 
 		#about-me, #follow-me {
 			grid-column: span 12;
 		}
+
+        #follow-me {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* grid-template-columns: 2; */
+            /* gap: 18px; */
+            column-gap: 24px;
+
+        }
+
+        #follow-me h3 {
+            flex-basis: 100%;
+        }
 
         #policies {
             grid-column: span 12;
@@ -102,6 +118,19 @@
             grid-column: span 12;
             justify-content: center;
             text-align: center;
+        }
+	}
+
+    @media only screen and (max-width: 556px) {
+        #policies {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
+            gap: 0px;
+        }
+
+        #copyright { 
+            margin-top: 24px;
         }
 	}
 </style>

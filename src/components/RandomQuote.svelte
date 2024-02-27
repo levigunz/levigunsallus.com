@@ -64,7 +64,7 @@
         width: auto;
     }
 
-    @media only screen and (max-width: 80em) {
+    @media only screen and (max-width: 1248px) {
         .button-secondary {
             padding: .625rem 1rem;
         }
