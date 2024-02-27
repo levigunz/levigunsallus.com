@@ -74,18 +74,13 @@
 					<h1>Levi Gunsallus</h1>
 					<h3>{selectedPortrait.year} ({selectedPortrait.shotBy ?? "Self Portrait"})</h3>
 				</span>
-<!-- 				
-				<div>
-					<span id="portrait-counter">
-						<span id="counter-active">{selectedPortraitIndex + 1}</span>
-						<span id="counter-length">{portraits.length}</span>
-					</span>			
-				</div> -->
 			</div>
 
 			<div id="portrait-thumbnails">
 				{#each portraits as portrait}
-					<img src={portrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} on:click={() => selectPortraitByYear(portrait.year)} />
+				<button on:click={() => selectPortraitByYear(portrait.year)}>
+					<img src={portrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
+				</button>
 				{/each}
 			</div>
 		</div>
@@ -140,6 +135,11 @@
 		column-gap: 16px;
 	}
 
+	#portrait-thumbnails button {
+		background: none;
+		border: none;
+	}
+
 	#portrait-thumbnails img {
 		width: 100%;
 		aspect-ratio: 4 / 5;
@@ -147,36 +147,6 @@
 
 	#portrait-thumbnails img:hover {
 		cursor: pointer;
-	}
-
-	#portrait-counter {
-		display: flex;
-		font-size: larger;
-		height: 5rem;
-		justify-content: space-between;
-		position: relative;
-		width: 1.25rem;
-	}
-
-	#counter-active, #counter-length {
-		text-align: center;
-    	width: 50%;
-	}
-
-	#counter-length {
-		align-self: flex-end;
-	}
-
-	#counter-length::before {
-		background-color: #898989;
-		content: "";
-		display: block;
-		height: 52%;
-		left: 12px;
-		position: absolute;
-		top: 16px;
-		transform: rotate(45deg);
-		width: 1px;
 	}
 
 	@media only screen and (max-width: 668px) {

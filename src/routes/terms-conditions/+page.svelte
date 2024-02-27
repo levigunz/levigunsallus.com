@@ -46,7 +46,7 @@
 		padding: 120px 0px;
 	}
 
-    @media only screen and (max-width: 80em) {
+    @media only screen and (max-width: 1248px) {
 		#terms-and-conditions {
 			padding: 140px 18px;
 		}

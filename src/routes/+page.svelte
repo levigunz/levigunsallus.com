@@ -4,8 +4,8 @@
     import RandomQuote from "../components/RandomQuote.svelte";
 	import Work from "../components/Work.svelte";
 
-	let innerWidth: number;
 	let y: number;
+	let innerWidth: number;
 </script>
 
 <svelte:head>
@@ -29,10 +29,10 @@
 	<meta property="twitter:image"  content="/preview.jpg">
 </svelte:head>
 
-<svelte:window bind:scrollY={y} bind:innerWidth />
+<svelte:window bind:scrollY={y} bind:innerWidth={innerWidth} />
 
 <div id="grid-wrapper">
-	<div id="landing-img" class:landing-img-scrolled={y > 10 && innerWidth > 668}>
+	<div id="landing-img" class:landing-img-scrolled={y > 10 && innerWidth > 1248}>
 		<HeroImage />
 	</div>
 
@@ -55,12 +55,14 @@
 		flex-direction: column;
 		gap: 5.9375rem;
 		margin-bottom: 5.9375rem;
+		padding: 18px;
 	}
 
 	#landing-img {
 		width: 100vw;
 		height: 70vh;
-		margin-left: calc(((100vw - 80em) / 2) * -1);
+		margin-left: calc(((100vw - 1248px) / 2) * -1 + -18px);
+		margin-top: -18px;
 		overflow: hidden;
 		transition: all 420ms ease-in-out;
 	}
@@ -74,21 +76,16 @@
 		overflow: hidden;
 	}
 
-	@media only screen and (max-width: 80em) {
+	@media only screen and (max-width: 1248px) {
 		#landing-img {
+			width: calc(100vw - 36px);
 			margin-left: 0px;
 		}
 	}
 
 	@media only screen and (max-width: 668px) {
-		#grid-wrapper {
-			padding:  18px;
-		}
-
 		#landing-img {
 			height: 30vh;
-			margin-top: -18px;
-			margin-left: -18px;
 		}
 	}
 </style>

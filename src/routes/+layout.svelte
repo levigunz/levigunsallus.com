@@ -24,7 +24,7 @@
 	}
 
 	main {
-		max-width: 80em;
+		max-width: 1248px;
 	} 
 
 	@media only screen and (max-width: 668px) {
