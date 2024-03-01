@@ -8,9 +8,9 @@
             <a class="page-link" href="/#portraits">
                 Portraits
             </a>
-            <!-- <a class="page-link" href="/#work">
+            <a class="page-link" href="/#work">
                 Work
-            </a> -->
+            </a>
             <a class="page-link" href="/#readings">
                 Readings
             </a>

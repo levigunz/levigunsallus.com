@@ -40,9 +40,9 @@
 		<Portraits />
 	</div>
 
-	<!-- <div id="work">
+	<div id="work">
 		<Work />
-	</div> -->
+	</div>
 
 	<div id="readings">
 		<RandomQuote />

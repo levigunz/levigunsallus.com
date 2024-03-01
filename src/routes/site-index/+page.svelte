@@ -11,7 +11,7 @@
     <h2><a href="/">Home</a></h2>
     <ul>
         <li><a href="/#portraits">Portraits</a></li>
-        <!-- <li><a href="/#work">Work</a></li> -->
+        <li><a href="/#work">Work</a></li>
         <li><a href="/#readings">Readings</a></li>
     </ul>
 
