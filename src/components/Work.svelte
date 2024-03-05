@@ -9,7 +9,7 @@
     <div id="card-container">
         <a href="//questanalytics.com" target="_blank">
             <div class="card" id="quest-analytics">
-                <img class="cover" src={questanalytics} alt="Quest Analytics" />
+                <img class="cover" loading="lazy" src={questanalytics} alt="Quest Analytics" />
                 <h4>Quest Analytics</h4>
                 <h2>Healthcare.</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
@@ -20,7 +20,7 @@
         <a href="//ovalhands.com" target="_blank">
             <div class="card" id="ovalhands">
                 <!-- Photo by <a href="https://unsplash.com/@rarchitecture_melbourne?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">R ARCHITECTURE</a> on <a href="https://unsplash.com/photos/brown-and-white-concrete-building-near-green-trees-during-daytime-GGupkreKwxA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-                <img class="cover" src={ovalhands} alt="Ovalhands" />
+                <img class="cover" loading="lazy" src={ovalhands} alt="Ovalhands" />
                 <h4>Ovalhands</h4>
                 <h2>Housing.</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
