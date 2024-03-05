@@ -1,56 +1,62 @@
 <script lang="ts">
 	import portrait2024 from '$lib/images/portrait2024.webp';
 	import portrait2024_fallback from '$lib/images/portrait2024.jpg';
+	import portrait2024_thumbnail from '$lib/images/portrait2024-thumbnail.jpg';
 	import portrait2023 from '$lib/images/portrait2023.webp';
 	import portrait2023_fallback from '$lib/images/portrait2023.jpg';
+	import portrait2023_thumbnail from '$lib/images/portrait2023-thumbnail.jpg';
 	import portrait2022 from '$lib/images/portrait2022.webp';
 	import portrait2022_fallback from '$lib/images/portrait2022.jpg';
+	import portrait2022_thumbnail from '$lib/images/portrait2022-thumbnail.jpg';
 	import portrait2021 from '$lib/images/portrait2021.webp';
 	import portrait2021_fallback from '$lib/images/portrait2021.jpg';
+	import portrait2021_thumbnail from '$lib/images/portrait2021-thumbnail.jpg';
 	import portrait2020 from '$lib/images/portrait2020.webp';
 	import portrait2020_fallback from '$lib/images/portrait2020.jpg';
+	import portrait2020_thumbnail from '$lib/images/portrait2020-thumbnail.jpg';
 	import portrait2019 from '$lib/images/portrait2019.webp';
 	import portrait2019_fallback from '$lib/images/portrait2019.jpg';
+	import portrait2019_thumbnail from '$lib/images/portrait2019-thumbnail.jpg';
 
 	const portraits = [
 		{
 			year: '2024',
-			thumbnail: null,
+			thumbnail: portrait2024_thumbnail,
 			shotBy: null,
 			src: portrait2024,
 			fallback: portrait2024_fallback
 		},
 		{
 			year: '2023',
-			thumbnail: null,
+			thumbnail: portrait2023_thumbnail,
 			shotBy: null,
 			src: portrait2023,
 			fallback: portrait2023_fallback
 		},
 		{
 			year: '2022',
-			thumbnail: null,
+			thumbnail: portrait2022_thumbnail,
 			shotBy: null,
 			src: portrait2022,
 			fallback: portrait2022_fallback
 		},
 		{
 			year: '2021',
-			thumbnail: null,
+			thumbnail: portrait2021_thumbnail,
 			shotBy: null,
 			src: portrait2021,
 			fallback: portrait2021_fallback
 		},
 		{
 			year: '2020',
-			thumbnail: null,
+			thumbnail: portrait2020_thumbnail,
 			shotBy: "Liam Hogan",
 			src: portrait2020,
 			fallback: portrait2020_fallback
 		},
 		{
 			year: '2019',
-			thumbnail: null,
+			thumbnail: portrait2019_thumbnail,
 			shotBy: "Liam Hogan",
 			src: portrait2019,
 			fallback: portrait2019_fallback
@@ -79,7 +85,7 @@
 			<div id="portrait-thumbnails">
 				{#each portraits as portrait}
 				<button on:click={() => selectPortraitByYear(portrait.year)}>
-					<img src={portrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
+					<img src={portrait.thumbnail} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
 				</button>
 				{/each}
 			</div>
@@ -100,6 +106,10 @@
 		display: flex;
 		flex-direction: column;
 		flex: 0.6;
+	}
+	
+	button {
+		padding: 0px;
 	}
 
 	#portrait {
@@ -160,7 +170,7 @@
 
 		#portrait-thumbnails {
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			column-gap: 16px;
+			column-gap: 4px;
 		}
 	}
 </style>
