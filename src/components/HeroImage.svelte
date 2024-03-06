@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
     import anime from '$lib/images/heros/anime.jpg';
     import art from '$lib/images/heros/art.jpg';
     import barn from '$lib/images/heros/barn.jpg';
@@ -99,14 +100,18 @@
         }
     ];
 
-    let heroIndex = Math.floor(Math.random() * heros.length);
+    let heroIndex: number | null = null;
 
-    $: hero = heros[heroIndex];
+	onMount(() => {
+        heroIndex = Math.floor(Math.random() * heros.length);
+	});
 </script>
 
+{#if heroIndex !== null}
 <picture>
-    <img src={hero.src} alt={hero.alt} style={hero.style} />
+    <img src={heros[heroIndex].src} alt={heros[heroIndex].alt} style={heros[heroIndex].style} />
 </picture>
+{/if}
 
 <style>
     img {
