@@ -85,7 +85,7 @@
 			<div id="portrait-thumbnails">
 				{#each portraits as portrait}
 				<button on:click={() => selectPortraitByYear(portrait.year)}>
-					<img src={portrait.thumbnail} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
+					<img loading="lazy" src={portrait.thumbnail} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
 				</button>
 				{/each}
 			</div>
@@ -94,7 +94,7 @@
 		<div id="portrait-right">
 			<picture>
 				<!-- <source srcset={selectedPortrait.src} type="image/webp" /> -->
-				<img id="portrait" src={selectedPortrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
+				<img loading="lazy" id="portrait" src={selectedPortrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
 			</picture>
 		</div>
 	</div>

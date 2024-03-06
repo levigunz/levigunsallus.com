@@ -101,6 +101,7 @@
     ];
 
     let heroIndex: number | null = null;
+    let hasImageLoaded = false;
 
 	onMount(() => {
         heroIndex = Math.floor(Math.random() * heros.length);
@@ -109,7 +110,7 @@
 
 {#if heroIndex !== null}
 <picture>
-    <img src={heros[heroIndex].src} alt={heros[heroIndex].alt} style={heros[heroIndex].style} />
+    <img loading="lazy" class:visible={hasImageLoaded} on:load={() => hasImageLoaded = true} src={heros[heroIndex].src} alt={heros[heroIndex].alt} style={heros[heroIndex].style} />
 </picture>
 {/if}
 
@@ -118,5 +119,11 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+        opacity: 0;
+        transition: opacity 420ms;
 	}
+
+    img.visible {
+        opacity: 1;
+    }
 </style>
