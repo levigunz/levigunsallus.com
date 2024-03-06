@@ -93,7 +93,7 @@
 
 		<div id="portrait-right">
 			<picture>
-				<source srcset={selectedPortrait.src} type="image/webp" />
+				<!-- <source srcset={selectedPortrait.src} type="image/webp" /> -->
 				<img id="portrait" src={selectedPortrait.src} alt={`Levi Gunsallus Portrait ${selectedPortrait.year}`} />
 			</picture>
 		</div>
