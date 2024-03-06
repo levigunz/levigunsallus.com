@@ -8,11 +8,9 @@
         </div>
         <div id="follow-me">
             <h3>Follow Me</h3>
-            <!-- <div id="follow-me-links"> -->
                 <p><a href="//github.com/levigunz" target="_blank">GitHub</a></p>
                 <p><a href="//instagram.com/levigunz" target="_blank">Instagram</a></p>
                 <p><a href="//x.com/levigunz" target="_blank">X</a></p>
-            <!-- </div> -->
         </div>
     </div>
 
@@ -99,8 +97,6 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            /* grid-template-columns: 2; */
-            /* gap: 18px; */
             column-gap: 24px;
 
         }

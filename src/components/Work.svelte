@@ -118,10 +118,7 @@
 
     @media only screen and (max-width: 668px) {
         #card-container {
-            /* width: 100%; */
-            /* display: grid; */
             grid-template-columns: repeat(1, 1fr);
-            /* gap: 18px; */
         }
     }
 </style>
