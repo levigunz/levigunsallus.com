@@ -25,14 +25,6 @@ const quotes: Array<Quote> = [
         citation: "Forged In Gold: Missouri S&T's first 150 Years - Larry Gragg"
     },
     {
-        text: "The new Kirk came with a plan: whether winning or losing, he walked away once he made his intended bets.",
-        citation: "The Gambler: How Penniless Dropout Kirk Kerkorian Became the Greatest Deal Maker in Capitalist History - William C. Rempel"
-    },
-    {
-        text: "In the old days, when a student had nerve enough and thought he had enough credits for graduation, he used to get a club in one hand and a gun in the other, and go around and hold up the faculty.",
-        citation: "Forged In Gold: Missouri S&T's first 150 Years - Larry Gragg"
-    },
-    {
         text: "In order to feel cold, you have to feel hot; in order to feel safe, you have to feel at risk. Contrast is the true measure of a complete experience.",
         citation: "Houses 2 - Tom Kundig"
     },
@@ -183,10 +175,6 @@ const quotes: Array<Quote> = [
     {
         text: "A city built around wheels becomes inappropriate for feet.",
         citation: 'Disabling Professions (Ideas in Progress) - Ivan Illich'
-    },
-    {
-        text: "Many other people are different, but I think that every step was sort of the inevitable, inexorable progress due to the previous steps in the other. It's not like I had no choice, but everything I did was the only choice because it was the only thing that made sense at the time.",
-        citation: "Founders at Work: Stories of Startups' Early Days - Jessica Livingston"
     },
     {
         text: 'Normally I can avoid anything but tempation.',
