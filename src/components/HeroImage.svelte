@@ -110,7 +110,7 @@
 
 {#if heroIndex !== null}
 <picture>
-    <img loading="lazy" class:visible={hasImageLoaded} on:load={() => hasImageLoaded = true} src={heros[heroIndex].src} alt={heros[heroIndex].alt} style={heros[heroIndex].style} />
+    <img class:visible={hasImageLoaded} on:load={() => hasImageLoaded = true} src={heros[heroIndex].src} alt={heros[heroIndex].alt} style={heros[heroIndex].style} />
 </picture>
 {/if}
 

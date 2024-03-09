@@ -105,8 +105,8 @@
 
     svg#recycle {
         position: absolute;
-        width: 96px;
-        height: 96px;
+        width: 20%;
+        height: 20%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -119,6 +119,11 @@
     @media only screen and (max-width: 668px) {
         #card-container {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        .card {
+            height: unset;
+            aspect-ratio: 1/1;
         }
     }
 </style>

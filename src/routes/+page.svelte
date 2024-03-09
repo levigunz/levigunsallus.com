@@ -78,8 +78,8 @@
 
 	@media only screen and (max-width: 1248px) {
 		#landing-img {
-			width: calc(100vw - 36px);
-			margin-left: 0px;
+			width: calc(100% + 36px);
+			margin-left: -18px;
 		}
 	}
 
