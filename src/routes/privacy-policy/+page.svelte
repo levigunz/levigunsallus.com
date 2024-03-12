@@ -34,6 +34,7 @@
 
 <style>
     #privacy-policy {
+        margin: auto;
         max-width: 600px;
 		padding: 120px 0px;
 	}
