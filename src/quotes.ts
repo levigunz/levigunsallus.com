@@ -5,6 +5,10 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "I've painted enough pictures to bring down let's say the throne of China, and instead of that I've got five thousand francs in my pocket.",
+        citation: "Magritte: A Life - Alex Danchev"
+    },
+    {
         text: "Many memorable songs have been written by people in occupations they didn't like.",
         citation: "The Creative Act: A Way of Being - Rick Rubin"
     },
