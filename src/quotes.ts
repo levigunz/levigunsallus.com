@@ -5,6 +5,10 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "In any situation, the architect should be thinking about the issues that the contractor has, and the contractor should be thinking about the issues that the architect has.",
+        citation: "Works - Tom Kundig"
+    },
+    {
         text: "I've painted enough pictures to bring down let's say the throne of China, and instead of that I've got five thousand francs in my pocket.",
         citation: "Magritte: A Life - Alex Danchev"
     },
