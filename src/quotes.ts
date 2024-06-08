@@ -5,6 +5,14 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "Every car on the road is a used car.",
+        citation: "Working Title - Tom Kundig"
+    },
+    {
+        text: "People who live far below their means enjoy a freedom that people busy upgrading their lifestyles can't fathom.",
+        citation: "The Almanack of Naval Ravikant - Naval Ravikant, Eric Jorgenson"
+    },
+    {
         text: "In any situation, the architect should be thinking about the issues that the contractor has, and the contractor should be thinking about the issues that the architect has.",
         citation: "Works - Tom Kundig"
     },
