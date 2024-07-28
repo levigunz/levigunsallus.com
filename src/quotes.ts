@@ -5,6 +5,10 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "The greatest thing on earth is to have the love of God in your heart, and the next greatest thing is to have electricity in your house.",
+        citation: "The Rise and Fall of American Growth - Robert J. Gordon"
+    },
+    {
         text: "Every car on the road is a used car.",
         citation: "Working Title - Tom Kundig"
     },
