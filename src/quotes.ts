@@ -5,7 +5,7 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
-        text: "However, as any collector learns very soon in his collecting career, every purchase cannot be a bargain—and some acquisitions are a triumph no matter what the price.",
+        text: "It was hard on [me], but I would rather be my own tyrant than have some one else tyrannize me.",
         citation: "Titan: The Life of John D. Rockefeller, Sr. - Ron Chernow"
     },
     {
