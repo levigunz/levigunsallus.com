@@ -5,6 +5,14 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "However, as any collector learns very soon in his collecting career, every purchase cannot be a bargain—and some acquisitions are a triumph no matter what the price.",
+        citation: "Titan: The Life of John D. Rockefeller, Sr. - Ron Chernow"
+    },
+    {
+        text: "However, as any collector learns very soon in his collecting career, every purchase cannot be a bargain—and some acquisitions are a triumph no matter what the price.",
+        citation: "As I See It - J. Paul Getty"
+    },
+    {
         text: "The greatest thing on earth is to have the love of God in your heart, and the next greatest thing is to have electricity in your house.",
         citation: "The Rise and Fall of American Growth - Robert J. Gordon"
     },
