@@ -30,6 +30,7 @@
 
     <style>
         body {
+            font-family: Arial, Tahoma, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,6 +41,15 @@
             flex-direction: row;
             gap: 12px;
             align-items: end;
+        }
+        a#quest, a#quest:hover, a#quest:visited, a#quest:active {
+            color: #5bc78c;
+        }
+        a#scarlok, a#scarlok:hover, a#scarlok:visited, a#scarlok:active {
+            color: #000;
+        }
+        a#oey, a#oey:hover, a#oey:visited, a#oey:active {
+            color: #ccc;
         }
     </style>
 </head>
@@ -52,8 +62,8 @@
 
         <section>
             <h1>Levi Gunsallus</h1>
-            <p>Work: <a href="//questanalytics.com">Quest Analytics</a> and <a href="//scarlok.com">Scarlok</a></p>
-            <p>Photos & Words: <a href="//onearlieryears.com">On Earlier Years</a></p>
+            <p>Work: <a id="quest" href="//questanalytics.com">Quest Analytics</a> and <a id="scarlok" href="//scarlok.com">Scarlok</a></p>
+            <p>Photos & Words: <a id="oey" href="//onearlieryears.com">On Earlier Years</a></p>
         </section>
     </div>
 </body>
