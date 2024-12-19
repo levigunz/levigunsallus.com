@@ -22,25 +22,27 @@
             box-sizing: border-box;
             margin: 0;
         }
+        html {
+            height: -webkit-fill-available;
+        }
         body {
+            min-height: 100vh;
+            /* mobile viewport bug fix */
+            min-height: -webkit-fill-available;
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-        }
-    </style>
-
-    <style>
-        body {
             font-family: Arial, Tahoma, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
         #wrapper {
+            padding: 12px;
             display: flex;
             flex-direction: row;
             gap: 12px;
             align-items: end;
+            flex-wrap: wrap;
         }
         a#quest, a#quest:hover, a#quest:visited, a#quest:active {
             color: #5bc78c;
@@ -51,13 +53,21 @@
         a#oey, a#oey:hover, a#oey:visited, a#oey:active {
             color: #ccc;
         }
+
+        @media only screen and (max-width: 600px) {
+            #wrapper {
+                width: min-content;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
         <picture>
-            <img src="portrait2025.jpg" alt="2025 Portrait" width="300">
+            <source type="image/webp" srcset="portrait2025.webp">
+            <source type="image/jpeg" srcset="portrait2025.jpg">
+            <img src="portrait2025.jpg" alt="2025 Portrait" width="300" height="375">
         </picture>
 
         <section>
