@@ -5,6 +5,14 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "Financial FOMO at its worst is the desire to make easy money at the expense of less well-informed people. But at its best, FOMO is the nagging suspicion that someone is building the future and it could be you.",
+        citation: "Boom: Bubbles and the End of Stagnation - Byrne Hobart, Tobias Huber"
+    },
+    {
+        text: "There was competition already. It wasn't as if Jeff was coming up with something completely new.",
+        citation: "The Everything Store - Brad Stone"
+    },
+    {
         text: "It was hard on [me], but I would rather be my own tyrant than have some one else tyrannize me.",
         citation: "Titan: The Life of John D. Rockefeller, Sr. - Ron Chernow"
     },
