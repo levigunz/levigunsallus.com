@@ -5,6 +5,10 @@ type Quote = {
 
 const quotes: Array<Quote> = [
     {
+        text: "Don't ask me whether this bowl which I am holding is a household implement or a ritual vessel. I could not care less.",
+        citation: "The Life of Nelson A. Rockefeller - Cary Reich"
+    },
+    {
         text: "Financial FOMO at its worst is the desire to make easy money at the expense of less well-informed people. But at its best, FOMO is the nagging suspicion that someone is building the future and it could be you.",
         citation: "Boom: Bubbles and the End of Stagnation - Byrne Hobart, Tobias Huber"
     },
